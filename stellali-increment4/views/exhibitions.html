@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Stella Lim">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+    <title>MonoMuse</title>
+</head>
+<body onload="addYear()">
+<div class="container">
+
+<header>
+    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    <h1>Exhibitions</h1>
+</header>
+<nav class="nav_bar">
+    <a href="../index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a class="cta" href="buytickets.html">Buy Tickets</a>
+    <a href="checkout.html">Checkout</a>
+</nav>
+
+<main class="main">
+
+    <h2>Exhibition 1: Dissolved Boundaries</h2>
+    <p>What happens when an artwork responds to your presence — when you stop being a viewer and become part of the work itself? <em>Dissolved Boundaries</em> brings together teamLab and Refik Anadol, two forces redefining how we experience art through data, light, and immersion. Together, their works ask: where does the artwork end and the world begin?</p>
+    <br>
+
+    <div class="artist-pair">
+
+        <div>
+            <img class="exhibition-img" src="../static/teamlab.jpg" alt="teamLab, Forest of Flowers and People: Lost, Immersed and Reborn, installation view">
+            <p class="img-caption">teamLab, <em>Forest of Flowers and People: Lost, Immersed and Reborn</em>, 2017. Installation view, teamLab Borderless, Tokyo. © teamLab, courtesy Pace Gallery. Via Wikimedia Commons.</p>
+            <h3>teamLab (f. 2001)</h3>
+            <p>An international art collective of artists, programmers, engineers, and architects, teamLab creates room-scale digital installations where every visitor becomes a living participant. In <em>Forest of Flowers and People</em>, flowers bloom and scatter in real time in response to human presence — no two moments, and no two visits, are ever the same.</p>
+        </div>
+
+        <div>
+            <img class="exhibition-img" src="../static/anadol.jpg" alt="Refik Anadol, Unsupervised — Machine Hallucinations — MoMA, 2022, installation view">
+            <p class="img-caption">Refik Anadol, <em>Unsupervised — Machine Hallucinations — MoMA</em>, 2022. Installation view, The Museum of Modern Art, New York. Documentation by Refik Anadol Studio. © Refik Anadol Studio.</p>
+            <h3>Refik Anadol (b. 1985)</h3>
+            <p>Turkish-American media artist Refik Anadol uses machine learning to transform vast datasets into living, breathing sculptures. His landmark piece <em>Unsupervised</em> at MoMA fed over 200 years of the museum's collection through a neural network, producing an endlessly shifting hallucination — what a machine might dream after seeing all of modern art.</p>
+        </div>
+
+    </div>
+
+    <hr style="border-color: #5e503f; margin: 32px 0;">
+
+    <h2>Exhibition 2: Organic Machines</h2>
+    <p>Can a machine learn to draw like you? Can a drone behave like a living creature? <em>Organic Machines</em> pairs Sougwen Chung and Anicka Yi — two artists who collapse the boundary between the biological and the computational. Their works don't just depict living systems; they become them.</p>
+    <br>
+
+    <div class="artist-pair">
+
+        <div>
+            <img class="exhibition-img" src="../static/chung.jpg" alt="Sougwen Chung, Drawing Operations Unit: Generation 2 (MEMORY), 2017, performance documentation">
+            <p class="img-caption">Sougwen Chung, <em>Drawing Operations Unit: Generation 2 (MEMORY)</em>, 2017. Performance documentation. © Sougwen Chung. Acquired by the Victoria and Albert Museum, London (Museum no. E.907-2022).</p>
+            <h3>Sougwen Chung (b. 1985)</h3>
+            <p>Canadian-Chinese artist and researcher Sougwen Chung has spent a decade collaborating with robotic systems she builds and trains on her own drawing gestures. In <em>MEMORY</em>, a robotic arm trained on twenty years of her personal drawings performs alongside her in real time — part mirror, part partner, part memory made mechanical.</p>
+        </div>
+
+        <div>
+            <img class="exhibition-img" src="../static/yi.jpg" alt="Anicka Yi, In Love with the World, 2021, Hyundai Commission, Tate Modern, installation view">
+            <p class="img-caption">Anicka Yi, <em>In Love with the World</em>, 2021. Hyundai Commission, Tate Modern, London. Installation view. © Anicka Yi. Photo courtesy Tate Modern.</p>
+            <h3>Anicka Yi (b. 1971)</h3>
+            <p>Seoul-born conceptual artist Anicka Yi merges biology, scent, and artificial intelligence into works that feel genuinely alive. For <em>In Love with the World</em>, she filled the Tate Modern's Turbine Hall with AI-guided "aerobes" — translucent, jellyfish-like drones that drifted, nested, and navigated the hall as if they were their own species, emitting scents drawn from the history of London's Bankside.</p>
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="footer">© <p id="copyYear"></p> MonoMuse. All rights reserved.</footer>
+</div>
+</body>
+</html>
