@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Stella Lim">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+    <title>MonoMuse</title>
+</head>
+<body onload="addYear()">
+<div class="container">
+
+<header>
+    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    <h1>Tickets</h1>
+</header>
+
+<nav class="nav_bar" id="mainNav">
+    <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+    <a href="../index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a class="cta" href="buytickets.html">Buy Tickets</a>
+    <a href="checkout.html">Checkout</a>
+</nav>
+
+<main class="main">
+    <h2>Ticket Prices</h2>
+    <br>
+    <table>
+        <tr>
+            <th>Ticket Type</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Adult</td>
+            <td>General admission for ages 18 and over. Under 18 free of charge.</td>
+            <td>$18</td>
+        </tr>
+        <tr>
+            <td>Student</td>
+            <td>Student ID required at entry.</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>Member</td>
+            <td>Member ID required. Includes unlimited annual visits.</td>
+            <td>$15</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <h2>April Schedule</h2>
+    <br>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Hours</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Apr 5</td>
+            <td>Saturday</td>
+            <td>10am – 6pm</td>
+            <!-- Buy Now passes the selected date to checkout via URL param -->
+            <td><button onclick="goToCheckout('2025-04-05')">Buy Now</button></td>
+        </tr>
+        <tr>
+            <td>Apr 12</td>
+            <td>Saturday</td>
+            <td>10am – 6pm</td>
+            <td><button onclick="goToCheckout('2025-04-12')">Buy Now</button></td>
+        </tr>
+        <tr>
+            <td>Apr 18</td>
+            <td>Friday</td>
+            <td>12pm – 9pm</td>
+            <td><button onclick="goToCheckout('2025-04-18')">Buy Now</button></td>
+        </tr>
+        <tr>
+            <td>Apr 19</td>
+            <td>Saturday</td>
+            <td>10am – 6pm</td>
+            <td><button onclick="goToCheckout('2025-04-19')">Buy Now</button></td>
+        </tr>
+        <tr>
+            <td>Apr 26</td>
+            <td>Saturday</td>
+            <td>10am – 6pm</td>
+            <td><button onclick="goToCheckout('2025-04-26')">Buy Now</button></td>
+        </tr>
+    </table>
+</main>
+
+<footer class="footer">© <p id="copyYear"></p> MonoMuse. All rights reserved.</footer>
+</div>
+
+<script>
+    /* Clicking Buy Now sends the user to checkout with the date pre-filled */
+    function goToCheckout(date) {
+        window.location.href = "checkout.html?date=" + date;
+    }
+</script>
+
+</body>
+</html>
